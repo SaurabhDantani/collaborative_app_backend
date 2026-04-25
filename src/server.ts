@@ -31,7 +31,7 @@ initializeSessionSocket(io);
 initializeEditorSocket(io);
 
 app.get("", (req, res) => {
-  return res.send("API is running");
+  return res.send("API is running for testing CI/CD pipeline");
 });
 
 const startServer = () => {
