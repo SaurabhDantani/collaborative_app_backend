@@ -21,4 +21,4 @@ jobs:
             git pull origin main
             npm install
             npm run build
-            pm2 restart collab-app || pm2 start dist/server.js --name collab-app
+            pm2 startOrReload ecosystem.config.js --env production
